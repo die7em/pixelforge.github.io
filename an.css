@@ -1,0 +1,128 @@
+/* Animaciones CSS */
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animación de desplazamiento desde la izquierda */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animación de desplazamiento desde abajo */
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animación de zoom */
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Aplicar la animación de desvanecimiento a las imágenes */
+#imagenes img {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Aplicar la animación de desvanecimiento al título principal */
+header h1 {
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Aplicar la animación de desvanecimiento a los párrafos de descripción */
+#descripcion p {
+    animation: fadeIn 4s ease-in-out;
+}
+
+/* Aplicar la animación de desplazamiento a los enlaces de navegación */
+nav ul li {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    opacity: 0;  /* Asegurarse de que estén ocultos inicialmente */
+    animation: slideInLeft 1s ease-in-out forwards;  /* Añadir 'forwards' para mantener el estado final de la animación */
+}
+
+/* Diferentes retrasos para los enlaces de navegación */
+nav ul li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+nav ul li:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+nav ul li:nth-child(3) {
+    animation-delay: 1s;
+}
+
+/* Animar el botón con rebote */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+#btnCrafteos {
+    animation: bounce 2s infinite;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 20px auto;  /* Centrar horizontalmente */
+    cursor: pointer;
+    width: max-content;  /* Ajusta el ancho del botón al contenido */
+    border-radius: 10px;
+}
+
+/* Animar las secciones */
+main section {
+    animation: slideInUp 1.5s ease-in-out;
+}
+
+/* Animar los subtítulos */
+h2 {
+    animation: zoomIn 2s ease-in-out;
+}
+
+/* Animación de desvanecimiento para la entrada */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}

@@ -1,0 +1,55 @@
+/* styles_light.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fondo gris para todo el body */
+    color: black; /* Texto negro por defecto */
+    margin: 0;
+    padding: 0;
+}
+
+header, nav {
+    padding: 20px;
+    background-color: ##222831; /* Fondo gris para el header y el nav */
+    color: white; /* Texto negro para el header y el nav */
+}
+
+main, section {
+    padding: 20px;
+    color: black; /* Texto negro para el contenido principal */
+}
+
+h1, h2, h3 {
+    color: #333333; /* Color oscuro para los títulos */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.receta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.receta-item {
+    background-color: #f0f0f0; /* Fondo gris claro para los items de receta */
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    color: black; /* Texto negro para todos los párrafos */
+}
+
+#Title {
+    
+    color: white;
+}
